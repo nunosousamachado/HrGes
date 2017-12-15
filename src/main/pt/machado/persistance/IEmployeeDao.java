@@ -1,4 +1,4 @@
-package pt.machado.persistance;
+package main.pt.machado.persistance;
 
 import java.util.List;
 import java.sql.SQLException;

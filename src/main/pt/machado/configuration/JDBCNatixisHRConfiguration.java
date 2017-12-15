@@ -1,4 +1,4 @@
-package pt.machado.configuration;
+package main.pt.machado.configuration;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,6 +9,7 @@ import javax.sql.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
 public class JDBCNatixisHRConfiguration {
+
 	private Properties properties;
 
 	public JDBCNatixisHRConfiguration() throws IOException {

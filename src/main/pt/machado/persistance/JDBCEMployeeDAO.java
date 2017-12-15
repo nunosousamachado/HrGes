@@ -1,4 +1,4 @@
-package pt.machado.persistance;
+package main.pt.machado.persistance;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class JDBCEMployeeDAO implements IEmployeeDao {
 
 	private DataSource dataSource;
 	private static final String GET_EMPLOYEE_BY_BI = "SELECT * FROM funcionarios WHERE bi=?";
-	private static final String INSERT_EMPLOYEE = "INSERT INTO funcionarios (bi, name, data_nascimento, morada, categoria, funcao) VALUES (?, ?, ?, ?, ?, ?)";
+	private static final String INSERT_EMPLOYEE = "INSERT INTO funcionarios (bi, nome, data_nascimento, morada, categoria, funcao) VALUES (?, ?, ?, ?, ?, ?)";
 	private static final String UPDATE_EMPLOYEE = "UPDATE funcionarios SET data_nascimento=? WHERE bi=?";
 	private static final String DELETE_EMPLOYEE = "DELETE FROM funcionarios WHERE bi=?";
 	private static final String GET_EMPLOYEE_LIST = "SELECT * FROM funcionarios";

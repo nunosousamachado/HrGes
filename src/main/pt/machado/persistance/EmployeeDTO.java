@@ -1,4 +1,4 @@
-package pt.machado.persistance;
+package main.pt.machado.persistance;
 
 public class EmployeeDTO {
 
@@ -14,7 +14,6 @@ public class EmployeeDTO {
 	}
 
 	public EmployeeDTO(String bi, String nome, String dataNascimento, String morada, String categoria, String funcao) {
-		super();
 		this.bi = bi;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
