@@ -8,11 +8,11 @@ import javax.sql.DataSource;
 
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
-public class JDBCNatixisHRConfiguration {
+public class JDBCHRGesConfiguration {
 
 	private Properties properties;
 
-	public JDBCNatixisHRConfiguration() throws IOException {
+	public JDBCHRGesConfiguration() throws IOException {
 		
 		this.properties = this.properties();
 	}
