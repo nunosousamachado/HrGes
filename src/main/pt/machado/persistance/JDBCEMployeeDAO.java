@@ -7,7 +7,7 @@ import java.util.List;
 import javax.sql.DataSource;
 import java.sql.*;
 
-public class JDBCEMployeeDAO implements IEmployeeDao {
+public class JDBCEmployeeDAO implements IEmployeeDao {
 
 	private DataSource dataSource;
 	private static final String GET_EMPLOYEE_BY_BI = "SELECT * FROM funcionarios WHERE bi=?";
@@ -16,7 +16,7 @@ public class JDBCEMployeeDAO implements IEmployeeDao {
 	private static final String DELETE_EMPLOYEE = "DELETE FROM funcionarios WHERE bi=?";
 	private static final String GET_EMPLOYEE_LIST = "SELECT * FROM funcionarios";
 
-	public JDBCEMployeeDAO(DataSource dataSource) {
+	public JDBCEmployeeDAO(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 
