@@ -9,10 +9,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.pt.machado.configuration.JDBCNatixisHRConfiguration;
+import main.pt.machado.configuration.JDBCHRGesConfiguration;
 import main.pt.machado.persistance.EmployeeDTO;
 import main.pt.machado.persistance.IEmployeeDao;
-import main.pt.machado.persistance.JDBCEMployeeDAO;
+import main.pt.machado.persistance.JDBCEmployeeDAO;
 
 
 public class JDBCEmployeeDAOTests {
@@ -22,11 +22,11 @@ public class JDBCEmployeeDAOTests {
 	@Before
 	public void setup() throws Exception {
 		
-		JDBCNatixisHRConfiguration configuration = new JDBCNatixisHRConfiguration();
+		JDBCHRGesConfiguration configuration = new JDBCHRGesConfiguration();
 		
 		DataSource dataSource = configuration.dataSource();
 		
-		this.employeeDao = new JDBCEMployeeDAO(dataSource);
+		this.employeeDao = new JDBCEmployeeDAO(dataSource);
 		
 	}
 	 
@@ -44,9 +44,9 @@ public class JDBCEmployeeDAOTests {
 	public void should_get_an_employee_When_given_an_BI() throws Exception {
 		
 		String expectedBI = "77763598";
-		String nome = "Rui Carvalho";
+		String nome = "Jane Doe";
 		String dataNascimento = "12/05/1985";
-		String morada = "Rua das Fontainhas, 73 4000-289 Porto";
+		String morada = "Rua de British Street, 73 4000-001 Porto";
 		String categoria = "Senior";
 		String funcao = "Java Devoloper";
 		
