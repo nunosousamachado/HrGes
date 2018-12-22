@@ -1,18 +1,16 @@
 package test.pt.machado.persistance;
 
 import java.util.List;
-
 import javax.sql.DataSource;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import main.pt.machado.configuration.JDBCHRGesConfiguration;
 import main.pt.machado.persistance.EmployeeDTO;
 import main.pt.machado.persistance.IEmployeeDao;
 import main.pt.machado.persistance.JDBCEmployeeDAO;
+
 
 
 public class JDBCEmployeeDAOTests {
