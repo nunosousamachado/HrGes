@@ -3,9 +3,9 @@ package main.pt.machado.persistance;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.sql.DataSource;
 import java.sql.*;
+
 
 public class JDBCEmployeeDAO implements IEmployeeDao {
 
@@ -142,12 +142,12 @@ public class JDBCEmployeeDAO implements IEmployeeDao {
 
             while(set.next()) {
 
-            		String user_bi = set.getString("bi");
-				String nome = set.getString("nome");
-				String dataNascimento = set.getString("data_nascimento");
-				String morada = set.getString("morada");
-				String categoria = set.getString("categoria");
-				String funcao = set.getString("funcao");
+            	String user_bi = set.getString("bi");
+		String nome = set.getString("nome");
+		String dataNascimento = set.getString("data_nascimento");
+		String morada = set.getString("morada");
+		String categoria = set.getString("categoria");
+		String funcao = set.getString("funcao");
 
                 employeeDTOsDTOList.add(new EmployeeDTO(user_bi, nome, dataNascimento, morada, categoria, funcao));
 
@@ -155,5 +155,4 @@ public class JDBCEmployeeDAO implements IEmployeeDao {
             return employeeDTOsDTOList;
         }
     }	
-
 }
